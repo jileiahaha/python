@@ -1,0 +1,713 @@
+3-4;3-5;3-6;3-7
+#3-4
+people=['aaa','bbb','ccc']
+print(people[0].title()+',welcome to my dinner')
+print(people[1].title()+',welcome to my dinner')
+print(people[2].title()+',welcome to my dinner')
+#3-5
+print(people[0].title()+' can not come')
+people[0]='ddd' 
+print(people[0].title()+',welcome to my dinner')
+print(people[1].title()+',welcome to my dinner')
+print(people[2].title()+',welcome to my dinner')
+#3-6
+print('I get a bigger table')
+people.insert(0,'eee')
+people.insert(2,'fff')
+people.append('ggg')
+print(people[0].title()+',welcome to my dinner')
+print(people[1].title()+',welcome to my dinner')
+print(people[2].title()+',welcome to my dinner')
+print(people[3].title()+',welcome to my dinner')
+print(people[4].title()+',welcome to my dinner')
+print(people[5].title()+',welcome to my dinner')
+#3-7
+print('The table cant come in time, so I only allow two friends')
+print('Sorry, '+people.pop().title()+'there is no room')
+print('Sorry, '+people.pop().title()+'there is no room')
+print('Sorry, '+people.pop().title()+'there is no room')
+print('Sorry, '+people.pop().title()+'there is no room')
+
+print(people[0].title()+',welcome to my dinner')
+print(people[1].title()+',welcome to my dinner')
+
+del people[0]
+del people[0]
+
+print(people)
+
+
+4-1
+pizzas = ['aaa','bbb','ccc']
+for pizza in pizzas:
+    print(pizza)
+for pizza in pizzas:
+    print('I like '+ pizza+ ' pizza')
+print('I really love pizza!')
+
+4-3
+for value in range(1,21):
+    print(value)
+
+4-4
+numbers = list(range(1,1000001))
+for i in numbers:
+    print(i)
+
+4-5
+numbers = list(range(1,1000001))
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
+
+4-6
+numbers = list(range(1,20+1,2))
+for i in numbers:
+    print(i)
+
+4-7
+numbers = list(range(3,30+1,3))
+for i in numbers:
+    print(i)
+
+4-8
+numbers=[]
+for i in range(1,10+1):
+    numbers.append(i**3)
+for i in numbers:
+    print(i)
+
+4-9
+numbers=[i**3 for i in range(1,10+1)]
+for i in numbers:
+    print(i)
+
+4-10
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print("The first three items in the list are:")
+print(players[0:3])
+print("Three items from the middle of the list are:")
+print(players[1:4])
+print("The last three items in the list are:")
+print(players[-3:])
+
+4-11
+pizzas = ['aaa','bbb','ccc']
+friend_pizzas = pizzas[:]
+pizzas.append("ddd")
+friend_pizzas.append("eee")
+print("My favorite pizzas are:")
+for pizza in pizzas:
+    print(pizza)
+print("My friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza)
+
+4-12
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+print("My favorite foods are:")
+for food in my_foods:
+    print(food)
+print("\nMy friend's favorite foods are:")
+for food in friend_foods:
+    print(food)
+
+4-13
+foods = ("aaa","bbb","ccc","ddd","eee")
+for food in foods:
+    print(food)
+foods = ("aaa","bbb","ccc","fff","gggg")
+for food in foods:
+    print(food)
+
+5-3
+alien_color = 'green'
+if alien_color == 'green':
+    print("you get five")
+
+alien_color = 'red'
+if alien_color == 'green':
+    print("you get five")
+
+5-4
+alien_color = 'green'
+if alien_color == 'green':
+    print("you get 5")
+else:
+    print("you get 10")
+    
+alien_color = 'red'
+if alien_color == 'green':
+    print("you get 5")
+else:
+    print("you get 10")
+
+5-5
+alien_color = 'red'
+if alien_color == 'green':
+    print("you get 5")
+elif alien_color == 'yellow':
+    print("you get 10")
+else:
+    print("you get 15")
+
+5-6
+age = 22
+if age < 2:
+    print("婴儿")
+elif age < 4:
+    print("正蹒跚学步")
+elif age < 13:
+    print("儿童")
+elif age < 20:
+    print("青少年")
+elif age < 65:
+    print("成年人")
+else:
+    print("老年人")
+
+5-7
+fruits = ['aaa','bbb','ccc']
+if 'aaa' in fruits:
+    print("you really like aaa")
+if 'bbb' in fruits:
+    print("you really like bbb")
+if 'ccc' in fruits:
+    print("you really like ccc")
+if 'ddd' in fruits:
+    print("you really like ddd")
+if 'eee' in fruits:
+    print("you really like eee")
+
+5-8
+users = ['aaa','bbb','ccc','ddd','admin']
+for user in users:
+    if user == 'admin':
+        print("Hello admin, would you like to see a status report?")
+    else:
+        print("Hello " + user + ", thank you for logging in again!")
+
+5-9
+users = []
+if users:
+    for user in users:
+        if user == 'admin':
+            print("Hello admin, would you like to see a status report?")
+        else:
+            print("Hello " + user + ", thank you for logging in again!")
+else:
+    print("We need to find some users!")
+
+5-10
+current_users = ['A','b','c','d','e']
+new_users = ['a','b','f','g','h']
+current_users_lower = [user.lower() for user in current_users]
+for user in new_users:
+    if user.lower() in current_users_lower:
+        print(user + "已经存在！更换名字！")
+    else:
+        print(user + "尚未使用！")
+
+5-11
+numbers = list(range(1,10))
+for number in numbers:
+    if number == 1:
+        print(str(number) + "st")
+    elif number == 2:
+        print(str(number) + "nd")
+    elif number == 3:
+        print(str(number) + "rd")
+    else:
+        print(str(number) + "th")
+
+6-1
+person = {
+    'first_name' : 'ouyang',
+    'last_name' : 'huan',
+    'age' : 22,
+    'city' : 'nanchang'
+    }
+print(person['first_name'])
+print(person['last_name'])
+print(person['age'])
+print(person['city'])
+
+6-2
+person_num = {
+    'aaa' : 1,
+    'bbb' : 2,
+    'ccc' : 3,
+    'ddd' : 4
+    }
+print("aaa's number is " + str(person_num['aaa']))
+print("bbb's number is " + str(person_num['bbb']))
+print("ccc's number is " + str(person_num['ccc']))
+print("ddd's number is " + str(person_num['ddd']))
+
+6-3
+person_num = {
+    'aaa' : '111',
+    'bbb' : '222',
+    'ccc' : '333',
+    'ddd' : '444'
+    }
+print("aaa's meaning is " + person_num['aaa'])
+print("\nbbb's meaning is " + person_num['bbb'])
+print("\nccc's meaning is " + person_num['ccc'])
+print("\nddd's meaning is " + person_num['ddd'])
+
+6-4
+person_num = {
+    'aaa' : '111',
+    'bbb' : '222',
+    'ccc' : '333',
+    'ddd' : '444'
+    }
+for person, number in person_num.items():
+    print("\n" + person + "'s meaning is " + number)
+
+6-5
+country_river = {
+    'aaa' : 'eee',
+    'bbb' : 'fff',
+    'ccc' : 'ggg',
+    'ddd' : 'hhh'
+    }
+for country, river in country_river.items():
+    print("The" + country.title() + " runs through " + river.title())
+for river in country_river.values():
+    print(river.title())
+for country in country_river.keys():
+    print(country.title())
+
+6-6
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+for name, language in favorite_languages.items():
+    print(name.title() + "'s favorite language is " + 
+          language.title() + ".")
+person = ['jen','aaa','sarah','bbb']
+for man in person:
+    if man in favorite_languages.keys():
+        print(man + " thinks!")
+    else:
+        print(man + " please!")
+
+6-7
+people = []
+person = {
+    'first_name' : 'ouyang',
+    'last_name' : 'huan',
+    'age' : 22,
+    'city' : 'nanchang'
+    }
+people.append(person)
+person = {
+	'first_name' : 'aaa',
+    'last_name' : 'aaa',
+    'age' : 22,
+    'city' : 'aaa'
+    }
+people.append(person)
+person = {
+	'first_name' : 'bbb',
+    'last_name' : 'bbb',
+    'age' : 22,
+    'city' : 'bbb'
+    }
+people.append(person)
+for one in people:
+    print(one['first_name'].title() + " " + one['last_name'].title())
+    print("he is " + str(one['age']) +"years old. ")
+    print("he live in " + one['city'] + ".\n")
+
+6-8
+pets = []
+animal = {
+    'tape' : 'dog',
+    'name' : 'a',
+    'host' : 'aa',
+    }
+pets.append(animal)
+animal = {
+    'tape' : 'cat',
+    'name' : 'b',
+    'host' : 'bb',
+    }
+pets.append(animal)
+animal = {
+    'tape' : 'snake',
+    'name' : 'c',
+    'host' : 'cc',
+    }
+pets.append(animal)
+for one in pets:
+    print(one['name'].title() + " is " + one['tape'] + ".")
+    print("its host is " + one['host'].title() +".\n")
+
+6-9
+favorite_places = {
+    'aaa' : ['c'],
+    'bbb' : ['d','e'],
+    'ccc' : ['f','g','h'],
+    }
+for name , places in favorite_places.items():
+    print(name.title() + "'s favorite languages are:")
+    for place in places:
+        print("\t" + place.title())
+
+6-10
+person_num = {
+    'aaa' : [1],
+    'bbb' : [2,3],
+    'ccc' : [3,4,5],
+    'ddd' : [4,5,6,7]
+    }
+for person , numbers in person_num.items():
+    print(person.title() + "love number is ")
+    for number in numbers:
+        print("\t" + str(number))
+    print("\n")
+
+6-11
+cities = {
+    'nanchang' : {
+        'country' : 'china',
+        'population' : 1,
+        'fact' : 'a'
+        },
+    'beijing' : {
+        'country' : 'china',
+        'population' : 2,
+        'fact' : 'b'
+        },
+    'chengdu' : {
+        'country' : 'china',
+        'population' : 3,
+        'fact' : 'c'
+        }
+    }
+for city , info in cities.items():
+    print("here is " + city.title() + "'s infomation:")
+    for project , content in info.items():
+        print(project + " : " + str(content))
+    print("\n")
+
+7-1
+car = input("What kind of car do you like ")
+print("Let me see if I can find you a " + car.title())
+
+7-2
+number = input("How much people are that will have dinner ")
+number = int(number)
+if number > 8:
+    print("Here is no free table")
+else:
+    print("Here is free table")
+
+7-3
+number = input("Please input a number ")
+number = int(number)
+if number%10 == 0:
+    print(str(number) + " is a multiple of 10")
+else:
+    print(str(number) + " is not a multiple of 10")
+
+7-4
+prompt = "\nWhat topping would you like on your pizza?"
+prompt += "\nEnter 'quit' to end the program. "
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    if message != 'quit':
+        print("I will add " + message)
+
+7-5
+prompt = "\nHow old are you?"
+prompt += "\nEnter 'quit' to end the program. "
+message = ""
+while True:
+    message = input(prompt)
+    if message == 'quit':
+        break
+    else:
+        age = int(message)
+        if age < 3:
+            print("free")
+        elif age <= 12:
+            print("$10")
+        else:
+            print("$15")
+
+7-6
+1）
+prompt = "\nHow old are you?"
+prompt += "\nEnter 'quit' to end the program. "
+message = ""
+while message != 'quit':
+    message = input(prompt)
+    if message != 'quit':
+        age = int(message)
+    if age < 3:
+        print("free")
+    elif age <= 12:
+        print("$10")
+    else:
+        print("$15")
+
+2）
+prompt = "\nHow old are you?"
+prompt += "\nEnter 'quit' to end the program. "
+active = True
+while active:
+    message = input(prompt)
+    if message == 'quit':
+        active = False
+    else:
+        age = int(message)
+        if age < 3:
+            print("free")
+        elif age <= 12:
+            print("$10")
+        else:
+            print("$15")
+
+3）
+prompt = "\nHow old are you?"
+prompt += "\nEnter 'quit' to end the program. "
+while True:
+    message = input(prompt)
+    if message == 'quit':
+        break
+    else:
+        age = int(message)
+        if age < 3:
+            print("free")
+        elif age <= 12:
+            print("$10")
+        else:
+            print("$15")
+
+7-7
+number = 0
+while True:
+    print(number)
+
+
+7-8
+sandwich_orders = ['aaa','bbb','ccc']
+finished_sandwiches = []
+while sandwich_orders:
+    sandwich = sandwich_orders.pop()
+    print("I made your " + sandwich + "sandwich")
+    finished_sandwiches.append(sandwich)
+print("\nThe following sandwich have made:")
+for sandwich in finished_sandwiches:
+    print(sandwich)
+
+
+7-9
+sandwich_orders = ['aaa','pastrami','bbb','pastrami','ccc','pastrami']
+finished_sandwiches = []
+print("pastrami have sell over!\n")
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+while sandwich_orders:
+    sandwich = sandwich_orders.pop()
+    print("I made your " + sandwich + "sandwich")
+    finished_sandwiches.append(sandwich)
+print("\nThe following sandwich have made:")
+for sandwich in finished_sandwiches:
+    print(sandwich)
+
+7-10
+responses = {}
+polling_active = True
+while polling_active:
+    name = input("\nWhat is your name? ")
+    place = input("If you could visit one place in the world, where would you go?")
+    responses[name] = place
+    repeat = input("Would you like to let another person respond? (yes/ no) ")
+    if repeat == 'no':
+        polling_active = False
+print("\n--- Results ---")
+for name, place in responses.items():
+    print(name.title() + " would like to visit " + place.title() + ".")
+
+
+8-1
+def display_message():
+    print("learning python")
+
+display_message()
+
+
+8-2
+def favorite_book(title):
+    print("One of my favorite books is " + title + " in Wonderland ")
+
+favorite_book("Alice")
+
+
+8-3
+def make_shirt(size,word):        
+    print("The size of T-shirt is " + str(size))
+    print("The word on T-shirt is " + word)
+make_shirt(28,"hello")
+make_shirt(size=30, word="sex")
+
+8-4
+def make_shirt(size="large",word="I love Python"):        
+    print("\nThe size of T-shirt is " + str(size))
+    print("The word on T-shirt is " + word)
+make_shirt()
+make_shirt("middle")
+make_shirt(word="hello")
+
+8-5
+def describe_city(city,country="China"):
+    print(city.title() + " is in " + country)
+describe_city("nanchang")
+describe_city("nanjing")
+describe_city("dongjing","Japan")
+
+
+9-1
+class Restaurant():
+
+    def __init__(self, restaurant_name , cuisine_type):
+        self.name = restaurant_name
+        self.type = cuisine_type
+
+    def describe_restaurant(self):
+        print("name is "+self.name.title() + "type is " + self.type.title())
+
+    def open_restaurant(self):
+        print(self.name.title() + " is open")
+
+
+
+restaurant = Restaurant('willie', 'China')
+
+print("Its name is " + restaurant.name.title())
+print("Its type is " + restaurant.type.title())
+
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
+
+
+9-2
+class Restaurant():
+
+    def __init__(self, restaurant_name , cuisine_type):
+        self.name = restaurant_name
+        self.type = cuisine_type
+
+    def describe_restaurant(self):
+        print("name is "+self.name.title() + "type is " + self.type.title())
+
+    def open_restaurant(self):
+        print(self.name.title() + " is open")
+
+
+
+restaurant = Restaurant('willie', 'China')
+restaurant2 = Restaurant('blue', 'english')
+restaurant3 = Restaurant('red', 'african')
+
+restaurant.describe_restaurant()
+restaurant2.describe_restaurant()
+restaurant3.describe_restaurant()
+
+9-4
+class Restaurant():
+
+    def __init__(self, restaurant_name , cuisine_type ):
+        self.name = restaurant_name
+        self.type = cuisine_type
+        self.number_served = 0
+
+    def describe_restaurant(self):
+        print("name is "+self.name.title() + "type is " + self.type.title())
+
+    def open_restaurant(self):
+        print(self.name.title() + " is open")
+
+
+
+restaurant = Restaurant('willie', 'China')
+print(restaurant.name.title() + " has " + str(restaurant.number_served) + " people.")
+restaurant.number_served = 2
+print(restaurant.name.title() + " has " + str(restaurant.number_served) + " people.")
+
+
+9-6
+class Restaurant():
+    def __init__(self, restaurant_name, cuisine_type):
+        self.name = restaurant_name
+        self.type = cuisine_type
+        self.number_served = 0
+
+    def describe_restaurant(self):
+        print("name is "+self.name.title() + "type is " + self.type.title())
+
+    def open_restaurant(self):
+        print(self.name.title() + " is open")
+
+
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = []
+
+    def show_flavors(self):
+        print("The flavors are")
+        for flavor in self.flavors:
+            print("- "+flavor.title())
+
+people = IceCreamStand("ICS", "IceCream")
+people.flavors = ['aaa', 'bbb', 'ccc']
+
+people.describe_restaurant()
+people.show_flavors()
+
+9-10
+restaurant.py中
+class Restaurant():
+    def __init__(self, restaurant_name, cuisine_type):
+        self.name = restaurant_name
+        self.type = cuisine_type
+        self.number_served = 0
+
+    def describe_restaurant(self):
+        print("name is "+self.name.title() + "type is " + self.type.title())
+
+    def open_restaurant(self):
+        print(self.name.title() + " is open")
+
+
+my_restaurant.py中
+from restaurant import Restaurant
+
+my_host = Restaurant('ouyanghuan', 'nanchangcai')
+my_host.describe_restaurant()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
